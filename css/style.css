@@ -144,4 +144,6 @@ footer a {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:auto;
+    background-attachment: fixed; /*Makes sure background stays in place*/
+    background-color: black; /*Replace extra bg color to black instead of white*/
 }
