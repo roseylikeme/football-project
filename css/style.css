@@ -1,0 +1,147 @@
+body, html {
+    height: 100vh;   
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+/* Navbar stuff */
+.navbar-dark .navbar-nav .nav-link {
+    color: #d50a0a;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #d50a0aab;
+}
+
+.nav-link ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;     
+    max-width: 600px;
+  }
+  
+@media screen and (min-width: 600px) {
+    nav-link ul {
+        flex-direction: row;
+    }
+}
+
+.nav-link li { 
+    position: relative; 
+    padding: 15px 0;
+}
+
+a.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+a.nav-link::after { 
+    content: ""; /*Does the white underline*/
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    /* background: none repeat scroll 0 0 transparent; */
+    height: 2px;
+    width: 0;
+    background: rgb(0, 74, 152); /*Color of underline*/
+    transition: width 0.3s ease 0s, left 0.3s ease 0s; /*Does the animation on hover*/ 
+}
+  
+a.nav-link:hover::after { 
+    width: 100%; 
+    left: 0; 
+
+}
+
+/* Scrollbar Stuff */
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.main {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 200px;
+    border: 3px;
+    border-width: 5px;
+    border-color: black;
+    background-color: rgb(211, 131, 131);
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+}
+
+.answer {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    color: rgb(0, 74, 152);
+}
+
+/* Footer Stuff */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Icons spacing */
+footer a {
+    padding: 20px;
+    color: white;
+}
+
+.football .color-red {
+    color: rgb(205, 40, 40);
+    border: white;
+}
+
+.color-red {
+    color:#d50a0a;
+    font-weight: 700;
+    font-size: medium;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* Football Page Stuff */
+.football {
+    background: 
+	linear-gradient(
+		rgba(0, 0, 0, 1.6),
+		rgba(0, 0, 0, 0.3)),
+	url("https://live.staticflickr.com/665/32563642421_af27f7ef86_o.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
