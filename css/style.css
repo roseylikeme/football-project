@@ -123,15 +123,15 @@ footer a {
 }
 
 .football .color-red {
-    color: rgb(205, 40, 40);
+    color: rgba(0, 0, 0, 0.943);
     border: white;
 }
 
 .color-red {
     color:#d50a0a;
-    font-weight: 700;
+    font-weight: 600;
     font-size: medium;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
 /* Football Page Stuff */
@@ -143,5 +143,5 @@ footer a {
 	url("https://live.staticflickr.com/665/32563642421_af27f7ef86_o.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size:auto;
 }
