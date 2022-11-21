@@ -122,26 +122,51 @@ footer a {
     color: white;
 }
 
-.football .color-red {
-    color: rgba(0, 0, 0, 0.943);
-    border: white;
+.color-white {
+    color:#ffffff;
+    font-weight: 500;
+    font-size: medium;
 }
 
-.color-red {
-    color:#d50a0a;
-    font-weight: 600;
-    font-size: medium;
-    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+#paragraph-field {
+    padding-top: 20px;
 }
 
 /* Football Page Stuff */
+/* DIFFERENT BACKGROUND IMAGES FOR FOOTBALL PAGE */
 .football {
     background: 
 	linear-gradient(
 		rgba(0, 0, 0, 1.6),
 		rgba(0, 0, 0, 0.3)),
 	url("https://live.staticflickr.com/665/32563642421_af27f7ef86_o.jpg");
-	background-position: center;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size:auto;
+    background-attachment: fixed; /*Makes sure background stays in place*/
+    background-color: black; /*Replace extra bg color to black instead of white*/
+}
+
+.dal {
+    background: 
+	linear-gradient(
+		rgba(0, 0, 0, 1.6),
+		rgba(0, 0, 0, 0.3)),
+	url("https://e0.365dm.com/22/11/2048x1152/skysports-dallas-cowboys-nfl_5960967.jpg");
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size:auto;
+    background-attachment: fixed; /*Makes sure background stays in place*/
+    background-color: black; /*Replace extra bg color to black instead of white*/
+}
+
+.den {
+    background: 
+	linear-gradient(
+		rgba(0, 0, 0, 1.6),
+		rgba(0, 0, 0, 0.3)),
+	url("https://cdn2.picryl.com/photo/2014/11/23/us-air-force-capt-ben-garland-63-140th-wing-public-95a937-1600.jpg");
+    background-position: center;
 	background-repeat: no-repeat;
 	background-size:auto;
     background-attachment: fixed; /*Makes sure background stays in place*/
