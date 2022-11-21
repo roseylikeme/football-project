@@ -34,10 +34,37 @@ window.onload = function () {
         console.log(selectMenu.options[selectMenu.selectedIndex]);
 
         //TODO: Change alert print to an innerHTML to print information about the team
-        alert(`You selected the team ${teamName}.`);
-
         //TODO: If the more information button was clicked and no team was selected, ALERT and return
-        
+        if (teamCode == ""){
+            alert('No team was selected.');
+            // Clears the paragraph text after something was picked
+            document.getElementById("main-bg").className = "football";
+            document.getElementById("html-bg").className = "football";
+            document.getElementById("paragraph-field").innerHTML = "";
+        } else {
+            alert(`You selected the team ${teamName}.`);
+            changeBackgroundandText();
+        }
+    }
+
+    function changeBackgroundandText(){
+        console.log("Should change background and text with corresponding code.")
+        if (teamCode == "DAL") {
+            console.log(teamCode)
+            // Edits the background
+            document.getElementById("main-bg").className = "dal";
+            document.getElementById("html-bg").className = "dal";
+            // Edits the paragraph text
+            document.getElementById("paragraph-field").innerHTML = "You selected the Dallas Cowboys (DAL) who play in Arlington, TX"
+        }
+        if (teamCode == "DEN") {
+            console.log(teamCode)
+            // Edits the background
+            document.getElementById("main-bg").className = "den";
+            document.getElementById("html-bg").className = "den";
+            // Edits the paragraph text
+            document.getElementById("paragraph-field").innerHTML = "You selected the Denver Broncos (DEN) who play in Denver, CO"
+        }
     }
 
     //Event Listener - When the user selects an option in the dropdown menu...
