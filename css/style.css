@@ -155,7 +155,7 @@ footer a {
 	url("https://e0.365dm.com/22/11/2048x1152/skysports-dallas-cowboys-nfl_5960967.jpg");
     background-position: center;
 	background-repeat: no-repeat;
-	background-size:auto;
+	background-size: cover;
     background-attachment: fixed; /*Makes sure background stays in place*/
     background-color: black; /*Replace extra bg color to black instead of white*/
 }
@@ -168,7 +168,7 @@ footer a {
 	url("https://cdn2.picryl.com/photo/2014/11/23/us-air-force-capt-ben-garland-63-140th-wing-public-95a937-1600.jpg");
     background-position: center;
 	background-repeat: no-repeat;
-	background-size:auto;
+	background-size: cover;
     background-attachment: fixed; /*Makes sure background stays in place*/
     background-color: black; /*Replace extra bg color to black instead of white*/
 }
