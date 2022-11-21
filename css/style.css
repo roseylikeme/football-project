@@ -142,7 +142,7 @@ footer a {
 	url("https://live.staticflickr.com/665/32563642421_af27f7ef86_o.jpg");
     background-position: center;
 	background-repeat: no-repeat;
-	background-size:auto;
+	background-size: cover;
     background-attachment: fixed; /*Makes sure background stays in place*/
     background-color: black; /*Replace extra bg color to black instead of white*/
 }
