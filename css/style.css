@@ -172,3 +172,16 @@ footer a {
     background-attachment: fixed; /*Makes sure background stays in place*/
     background-color: black; /*Replace extra bg color to black instead of white*/
 }
+
+.kan {
+    background: 
+	linear-gradient(
+		rgba(0, 0, 0, 1.6),
+		rgba(0, 0, 0, 0.3)),
+	url("https://pbs.twimg.com/media/Fhtl3-qWIAArKx3?format=jpg&name=4096x4096");
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+    background-attachment: fixed; /*Makes sure background stays in place*/
+    background-color: black; /*Replace extra bg color to black instead of white*/
+}

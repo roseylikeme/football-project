@@ -17,7 +17,7 @@ window.onload = function () {
     let numberOfTeams = teams.length;
     console.log(`number of teams: ${numberOfTeams}`); // prints out # of teams
     for (let i = 0; i < numberOfTeams; i++) {
-        let theOption = new Option(teams[i].name, teams[i].code);
+        let theOption = new Option(teams[i].name, teams[i].code); //? How would I grab teams[i].plays
         selectMenu.appendChild(theOption);
     }
     
@@ -33,8 +33,6 @@ window.onload = function () {
         teamName = selectMenu.options[selectMenu.selectedIndex].text;
         console.log(selectMenu.options[selectMenu.selectedIndex]);
 
-        //TODO: Change alert print to an innerHTML to print information about the team
-        //TODO: If the more information button was clicked and no team was selected, ALERT and return
         if (teamCode == ""){
             alert('No team was selected.');
             // Clears the paragraph text after something was picked
@@ -65,6 +63,14 @@ window.onload = function () {
             // Edits the paragraph text
             document.getElementById("paragraph-field").innerHTML = "You selected the Denver Broncos (DEN) who play in Denver, CO"
         }
+        if (teamCode == "KAN") {
+            console.log(teamCode)
+            // Edits the background
+            document.getElementById("main-bg").className = "kan";
+            document.getElementById("html-bg").className = "kan";
+            // Edits the paragraph text
+            document.getElementById("paragraph-field").innerHTML = `You selected the Kansas City Chiefs (KAN) who play in Kansas City, MO`
+        }
     }
 
     //Event Listener - When the user selects an option in the dropdown menu...
@@ -72,7 +78,16 @@ window.onload = function () {
     //Event Handler - ... run this function
     function onTeamChanged() {
         let selectedTeam = selectMenu.value;
-        //TODO: Create an if statemenet that cathes if selectedTeam is blank. Print out no team was selected.
         console.log(`You changed your team to ${selectedTeam}`)
+    }
+
+    // REMOVE AN ITEM
+    let itemToDelete = "HOU";
+    let numberOfOptionTags = selectMenu.options.length;
+    for (let i = 0; i < numberOfOptionTags; i++) {
+        if (selectMenu.options[i].value == itemToDelete) {
+        selectMenu.remove(i);
+        break;
+        }
     }
 };
